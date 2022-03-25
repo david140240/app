@@ -1,6 +1,6 @@
 
 body {
-    margin-left: 0;
+    margin: 0;
     width: 100%;
     overflow-x:hidden;
     height: 100vh;
@@ -58,21 +58,6 @@ body {
     position: relative;
 }
 
-.nav__link:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-
-    background-color: aqua;
-    opacity: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-
-    transition: opacity  .2s linear;
-}
 
 .nav__link:hover{
     color: aqua;
@@ -86,12 +71,11 @@ body {
 
 
 .intro {
-    background-image: url(/img/as.jpg);
-
+    background-image: url("../img/as.jpg");
+    background-size: cover;
     left: 0;
     right: 0;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,8 +167,7 @@ body {
  
 
 .make {
-    background-image: url(//grdis.jpg);
-    /* border: solid rgb(255, 255, 255) 2px ; */
+    background-image: url("../grdis.jpg");
     display: inline-block;
     margin: 60px auto 60px;
     color: white;
@@ -199,9 +182,8 @@ body {
     opacity: 70%;
     width: 500px;
     height: 210px;
-    -webkit-background-size: cover;
     background-size: cover;
-    background-image: url(/img/grdis.jpg);
+    background-image: url("../img/grdis.jpg");
     margin: 0 auto 0;
     border: 2px solid; color: rgb(6, 165, 228);
     border-radius: 30px;
@@ -219,7 +201,8 @@ body {
 }
 
 .contr {
-    background-image: url(/img/star2.jpg);
+    background-image: url("../img/star2.jpg");
+    background-size: cover;
     height: 750px;
     width: 100%;
     min-width: 500px;
@@ -308,10 +291,20 @@ body {
     transition: transform .2s linear;
 }
 
+.kartinka {
+    background-size: cover;
+}
+
 .about__image img {
 
     display: block;
     transition: opacity .2s linear;
+}
+
+.kartinka img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -337,10 +330,10 @@ body {
 /* section1  */
 
 .section2{
-    background-image: url(/img/stats/final.jpg);
+    background-image: url("../img/stats/final.jpg");
+    background-size: cover;
     padding: 70px 0 10px;
     right: 0;
-    height: 100%;
 }
 
 
@@ -410,7 +403,9 @@ position: relative;
 background-color: white;
 }
 
-
+.stats__kartinka {
+    background-size: cover;
+}
 
 .stats__link {
     font-size: 20px;
@@ -438,6 +433,7 @@ background-color: white;
 }
 
 .stats__img {
+    background-size: cover;
     background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(83, 83, 83));
     transition: transform .2s linear;
 }
@@ -494,7 +490,7 @@ background-color: white;
     width: 100%;
     left: 0;
     right: 0;
-    background-image: url(/img/star2.jpg);
+    background-image: url("../img/star2.jpg");
 }
 
 .inf_con {
@@ -555,7 +551,8 @@ background-color: white;
     left: 0;
     right: 0;
     margin-top: 0;
-    background-image: url(/img/punkt/grap.jpg);
+    background-image: url("../img/punkt/grap.jpg");
+    background-size: cover;
 }
 
 
@@ -612,9 +609,10 @@ background-color: white;
 
 .vid{
     width: 100%;
-    height: 1080px;
+    height: 100%;
     display: flex;
-    background-image: url(/img/vib/fon.jpg);
+    background-size: cover;
+    background-image: url("../img/vib/fon.jpg");
     left: 0;
     right: 0;
     top: 0;
@@ -627,12 +625,12 @@ background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 60px;
 
 }
 
 .zagolovok {
     font-family: 'Righteous', cursive;
-
     font-size: 36px;
     color: #fff;
     text-align: center;
@@ -645,23 +643,30 @@ background-color: white;
 
 .vid__kart {
     overflow: hidden;
-    border-radius: 40px;
+    width: 500px;
+    height: 281px;
+    border-radius: 37px;
+
 }
 
 .vid__items {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.vid__item{
-    margin-left: 50px;
 
+.vid__item {
+    height: auto;
+    text-align: center;
 }
 
 .vid__photo {
-    transition: transform 1s;
 
+    transition: transform 1s;
+    background-size: cover;
 }
+
+
 
 .vid__photo:hover{
     transform: scale(1.1);
@@ -688,7 +693,7 @@ background-color: white;
 }
 
 
-.first__vid {
+.text__vid {
     color: #fff;
     text-align: center;
     font-family: 'Prompt', sans-serif;
@@ -702,41 +707,13 @@ background-color: white;
     0 0 8px rgb(255, 255, 255);
 }
 
-.second__vid {
-    color: #fff;
-    text-align: center;
-    font-family: 'Prompt', sans-serif;
-    font-size: 24px;
-    width: 500px;
-    height: 300px;
-    margin: 20px auto 0;
-    display: inline-block;
-    text-shadow:
-    0 0 5px rgb(255, 255, 255),
-    0 0 8px rgb(255, 255, 255);
-}
-
-.third__vid {
-    color: #fff;
-    text-align: center;
-    font-family: 'Prompt', sans-serif;
-    font-size: 24px;
-    width: 500px;
-    height: 300px;
-    margin: 20px auto 0;
-    display: inline-block;
-    text-shadow:
-    0 0 5px rgb(255, 255, 255),
-    0 0 8px rgb(255, 255, 255);
-}
-
 /*  vid  */
 
 
 .contact {
     width: 100%;
     height: 300px;
-    background-image: url(/img/contact/fon1.jpg);
+    background-image: url("../img/contact/fon1.jpg");
     display: flex;
     justify-content: center;
     -webkit-background-size: cover;
@@ -801,6 +778,7 @@ background-color: white;
 }
 
 .seti__img {
+    background-size: cover;
     transition: .2s;
     filter: brightness(75%)
 }
@@ -811,3 +789,135 @@ background-color: white;
 
 
 /* contact__soc */
+
+
+@media (max-width: 1367px) {
+
+    .logo {
+        font-size: 37px;
+    }
+
+    .name {
+        font-size: 60px;
+    }
+
+    .back {
+        width: 450px;
+    }
+
+    .make{
+        font-size: 40px;
+    }
+
+    .select {
+        font-size: 12px;
+    }
+
+    .vibor {
+        width: 400px;
+        height: 120px;
+    }
+
+    .vib__link {
+        font-size: 30px;
+    }
+
+    /*  intro  */
+
+
+
+    .about__site {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .kartinka {
+        width: 290px;
+    }
+
+    .about__image {
+        width: 290px;
+    }
+
+    .link__item {
+        width: 290px;
+    }
+
+    .links {
+        max-width: 1050px;
+    }
+
+    /*  section 1 */
+
+
+    .opis {
+        font-size: 22px;
+    }
+
+    .stats__kartinka {
+        width: 200px;
+    }
+
+    .stats__item {
+        width: 200px;
+
+    }
+
+    .stats {
+        min-width: 750px;
+    }
+
+    /*  section 2  */
+
+    .vid__photo {
+        width: 300px;
+    }
+
+    .zag {
+        font-size: 25px;
+    }
+
+    .zag:after {
+        width: 45px;
+        height: 2px;
+    }
+
+    .text__vid {
+        width: 400px;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .vid__item {
+        margin-left: 0;
+    }
+
+    /*  vid */
+
+    .contact__tel {
+        font-size: 30px;
+    }
+
+    .number {
+        font-size: 18px;
+    }
+    .pochta {
+        font-size: 18px;
+    }
+
+    .social__network{
+        font-size: 30px;
+    }
+
+    .seti__img {
+        width: 35px;
+    }
+
+    .contact__soc {
+        width: 200px;
+    }
+
+}
