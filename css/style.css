@@ -167,7 +167,6 @@ body {
  
 
 .make {
-    background-image: url("../grdis.jpg");
     display: inline-block;
     margin: 60px auto 60px;
     color: white;
@@ -179,12 +178,16 @@ body {
 }
     
 .back{
+    align-items: center;
+    display: block;
+    width: 100%;
+}
+
+.grdis {
     opacity: 70%;
-    width: 500px;
     height: 210px;
     background-size: cover;
-    background-image: url("../img/grdis.jpg");
-    margin: 0 auto 0;
+    margin: 0 auto ;
     border: 2px solid; color: rgb(6, 165, 228);
     border-radius: 30px;
     box-shadow:   0 0 10px rgb(6, 165, 228),
@@ -798,11 +801,7 @@ background-color: white;
     }
 
     .name {
-        font-size: 60px;
-    }
-
-    .back {
-        width: 450px;
+        font-size: 50px;
     }
 
     .make{
@@ -834,20 +833,29 @@ background-color: white;
         font-size: 20px;
     }
 
+    .about__image {
+        width: 220px;
+    }
+
     .kartinka {
-        width: 290px;
+        height: auto;
+        width: 220px;
     }
 
     .about__image {
-        width: 290px;
+        width: 220px;
+    }
+
+    .youtube {
+        font-size: 20px;
     }
 
     .link__item {
-        width: 290px;
+        width: 220px;
     }
 
     .links {
-        max-width: 1050px;
+        max-width: 900px;
     }
 
     /*  section 1 */
@@ -919,5 +927,7 @@ background-color: white;
     .contact__soc {
         width: 200px;
     }
+
+    /*  contact  */
 
 }
