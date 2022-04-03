@@ -823,7 +823,9 @@ background-color: white;
 
     /*  intro  */
 
-
+    .contr{
+        height: 650px;
+    }
 
     .about__site {
         font-size: 30px;
@@ -834,16 +836,16 @@ background-color: white;
     }
 
     .about__image {
-        width: 220px;
+        width: 280px;
     }
 
     .kartinka {
         height: auto;
-        width: 220px;
+        width: 280px;
     }
 
     .about__image {
-        width: 220px;
+        width: 280px;
     }
 
     .youtube {
@@ -851,11 +853,11 @@ background-color: white;
     }
 
     .link__item {
-        width: 220px;
+        width: 280px;
     }
 
     .links {
-        max-width: 900px;
+        max-width: 1000px;
     }
 
     /*  section 1 */
@@ -880,12 +882,36 @@ background-color: white;
 
     /*  section 2  */
 
+
+    .first__text {
+        font-size: 27px;
+    }
+
+    .second__text {
+        font-size: 27px;
+    }
+
+    .info_con {
+        margin: 100px auto;
+    }
+
+
+    /*  infor  */
+
     .vid__photo {
         width: 300px;
     }
 
-    .zag {
-        font-size: 25px;
+    .vid__kart{
+        width: 300px;
+        height: auto;
+        align-items: center;
+        margin: 0 auto
+
+    }
+
+    .zagolovok {
+        font-size: 27px;
     }
 
     .zag:after {
@@ -899,8 +925,9 @@ background-color: white;
         text-align: left;
     }
 
+
     .vid__item {
-        margin-left: 0;
+        margin: 0 auto
     }
 
     /*  vid */
